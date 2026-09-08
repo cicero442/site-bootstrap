@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ViajaMais - Catálogo de Destinos</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+  <!-- NAVBAR PADRONIZADA -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-warning" href="index.html">
+        <i class="bi bi-compass-fill me-2"></i>ViajaMais
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link active" href="destinos.html">Destinos</a></li>
+          <li class="nav-item"><a class="nav-link" href="bootstrap.html">Conhecendo o Bootstrap</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CABEÇALHO DA PÁGINA -->
+  <div class="bg-primary text-white py-4 mb-4">
+    <div class="container text-center">
+      <h1 class="fw-bold">Nossos Pacotes de Viagem</h1>
+      <p class="lead mb-0">Encontre o destino perfeito para as suas próximas férias</p>
+    </div>
+  </div>
+
+  <main class="container my-4">
+    <div class="alert alert-info d-flex align-items-center mb-4" role="alert">
+      <i class="bi bi-info-circle-fill fs-4 me-3"></i>
+      <div>
+        <strong>Dica importante:</strong> Reservando com 60 dias de antecedência você garante até 12x sem juros no cartão!
+      </div>
+    </div>
+
+    <!-- CATÁLOGO DE CARDS COM REDIRECIONAMENTO DINÂMICO -->
+    <div class="row g-4">
+
+      <!-- Card 1: Rio -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Rio de Janeiro" style="height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <span class="badge bg-warning text-dark mb-2">Mais Vendido</span>
+            <h5 class="card-title fw-bold">Rio de Janeiro — 5 Dias</h5>
+            <p class="card-text text-muted">Inclui passagem aérea, hotel com café da manhã e passeio ao Pão de Açúcar.</p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center pb-3">
+            <span class="fs-5 fw-bold text-success">R$ 1.200</span>
+            <a href="detalhes.html?id=rio" class="btn btn-outline-primary btn-sm">Ver Detalhes</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 2: Paris -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Paris" style="height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <span class="badge bg-danger mb-2">Promoção</span>
+            <h5 class="card-title fw-bold">Paris — 7 Dias</h5>
+            <p class="card-text text-muted">Passagens, hospedagem próxima ao Louvre e tour de barco pelo Rio Sena.</p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center pb-3">
+            <span class="fs-5 fw-bold text-success">R$ 4.800</span>
+            <a href="detalhes.html?id=paris" class="btn btn-outline-primary btn-sm">Ver Detalhes</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 3: Kyoto -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Kyoto" style="height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <span class="badge bg-info text-dark mb-2">Exclusivo</span>
+            <h5 class="card-title fw-bold">Kyoto — 10 Dias</h5>
+            <p class="card-text text-muted">Acomodação em Ryokan tradicional, passe de trem-bala e guia em português.</p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center pb-3">
+            <span class="fs-5 fw-bold text-success">R$ 6.300</span>
+            <a href="detalhes.html?id=kyoto" class="btn btn-outline-primary btn-sm">Ver Detalhes</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 4: Nova York -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="https://images.unsplash.com/photo-1534430480872-3498386e7856?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Nova York" style="height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <span class="badge bg-secondary mb-2">Últimas Vagas</span>
+            <h5 class="card-title fw-bold">Nova York — 6 Dias</h5>
+            <p class="card-text text-muted">Hotel em Manhattan, ingresso para musical da Broadway e tour de helicóptero.</p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center pb-3">
+            <span class="fs-5 fw-bold text-success">R$ 5.100</span>
+            <a href="detalhes.html?id=ny" class="btn btn-outline-primary btn-sm">Ver Detalhes</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 5: Roma -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="https://images.unsplash.com/photo-1552832230-c0197dd311b5?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Roma" style="height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <span class="badge bg-danger mb-2">Promoção</span>
+            <h5 class="card-title fw-bold">Roma — 7 Dias</h5>
+            <p class="card-text text-muted">Visitas guiadas ao Coliseu, Vaticano e gastronômicas pela região da Toscana.</p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center pb-3">
+            <span class="fs-5 fw-bold text-success">R$ 4.200</span>
+            <a href="detalhes.html?id=roma" class="btn btn-outline-primary btn-sm">Ver Detalhes</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card 6: Cairo -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Cairo" style="height: 200px; object-fit: cover;">
+          <div class="card-body">
+            <span class="badge bg-success mb-2">Novo</span>
+            <h5 class="card-title fw-bold">Cairo — 8 Dias</h5>
+            <p class="card-text text-muted">Cruzeiro pelo Rio Nilo, visita às Pirâmides de Gizé e hospedagem 5 estrelas.</p>
+          </div>
+          <div class="card-footer bg-white border-0 d-flex justify-content-between align-items-center pb-3">
+            <span class="fs-5 fw-bold text-success">R$ 5.900</span>
+            <a href="detalhes.html?id=cairo" class="btn btn-outline-primary btn-sm">Ver Detalhes</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER PADRONIZADO -->
+  <footer class="bg-dark text-white pt-4 pb-3 mt-auto">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-12 col-md-6 mb-3">
+          <h5 class="text-warning"><i class="bi bi-compass me-2"></i>ViajaMais Turismo</h5>
+          <p class="small text-secondary">Sua agência de viagens de confiança. Criamos experiências inesquecíveis pelos melhores destinos do mundo.</p>
+        </div>
+        <div class="col-12 col-md-6 text-md-end mb-3">
+          <p class="mb-1"><strong>Projeto:</strong> Site de Turismo Responsivo</p>
+          <p class="mb-1"><strong>Aluno:</strong> Desenvolvedor Web</p>
+          <p class="mb-0"><strong>Ano:</strong> 2026 | Desenvolvido com Bootstrap 5</p>
+        </div>
+      </div>
+      <hr class="border-secondary">
+      <div class="text-center small text-secondary">
+        &copy; 2026 ViajaMais Turismo — Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

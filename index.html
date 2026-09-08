@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ViajaMais - Sua Próxima Aventura Começa Aqui</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <style>
+    .hero-banner {
+      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                  url('https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+      color: white;
+      padding: 100px 0;
+    }
+  </style>
+</head>
+<body class="bg-light d-flex flex-column min-vh-100">
+
+  <!-- NAVBAR PADRONIZADA -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold text-warning" href="index.html">
+        <i class="bi bi-compass-fill me-2"></i>ViajaMais
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Início</a></li>
+          <li class="nav-item"><a class="nav-link" href="destinos.html">Destinos</a></li>
+          <li class="nav-item"><a class="nav-link" href="bootstrap.html">Conhecendo o Bootstrap</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ALERTA DE PROMOÇÃO -->
+  <div class="alert alert-warning alert-dismissible fade show text-center mb-0 rounded-0 border-0" role="alert">
+    <strong>🔥 Promoção de Verão!</strong> Pacotes para o Nordeste com até 30% de desconto. 
+    <a href="destinos.html" class="alert-link">Confira os destinos!</a>
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Fechar"></button>
+  </div>
+
+  <!-- HERO BANNER -->
+  <header class="hero-banner text-center">
+    <div class="container">
+      <h1 class="display-3 fw-bold mb-3">Explore o Mundo Conosco</h1>
+      <p class="lead mb-4 fs-4">Descubra lugares incríveis com os melhores preços e roteiros inesquecíveis.</p>
+      <a href="destinos.html" class="btn btn-primary btn-lg me-2 shadow">
+        <i class="bi bi-search me-1"></i> Ver Pacotes
+      </a>
+      <a href="#diferenciais" class="btn btn-outline-light btn-lg shadow">Saiba Mais</a>
+    </div>
+  </header>
+
+  <!-- SESSÃO DE DESTAQUES -->
+  <main class="container my-5">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-primary">Destinos em Destaque</h2>
+      <p class="text-muted">Os locais mais procurados pelos nossos viajantes</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Card Rio de Janeiro -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="https://images.unsplash.com/photo-1483729558449-99ef09a8c325?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Rio de Janeiro" style="height: 220px; object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h5 class="card-title fw-bold mb-0">Rio de Janeiro</h5>
+              <span class="badge bg-success">Nacional</span>
+            </div>
+            <p class="card-text text-muted flex-grow-1">Praias deslumbrantes, o Cristo Redentor e uma energia contagiosa te esperam na Cidade Maravilhosa.</p>
+            <div class="pt-3 border-top d-flex justify-content-between align-items-center">
+              <span class="fs-5 fw-bold text-primary">R$ 1.200</span>
+              <a href="detalhes.html?id=rio" class="btn btn-outline-primary btn-sm">Ver Detalhes</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Paris -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Paris" style="height: 220px; object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h5 class="card-title fw-bold mb-0">Paris</h5>
+              <span class="badge bg-primary">Internacional</span>
+            </div>
+            <p class="card-text text-muted flex-grow-1">Conheça a Cidade Luz, a Torre Eiffel, museus mundialmente famosos e uma gastronomia inesquecível.</p>
+            <div class="pt-3 border-top d-flex justify-content-between align-items-center">
+              <span class="fs-5 fw-bold text-primary">R$ 4.800</span>
+              <a href="detalhes.html?id=paris" class="btn btn-outline-primary btn-sm">Ver Detalhes</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Card Kyoto -->
+      <div class="col-12 col-md-6 col-lg-4">
+        <div class="card h-100 shadow-sm border-0">
+          <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Kyoto" style="height: 220px; object-fit: cover;">
+          <div class="card-body d-flex flex-column">
+            <div class="d-flex justify-content-between align-items-center mb-2">
+              <h5 class="card-title fw-bold mb-0">Kyoto</h5>
+              <span class="badge bg-primary">Internacional</span>
+            </div>
+            <p class="card-text text-muted flex-grow-1">Mergulhe na cultura tradicional do Japão, com seus templos históricos e belos jardins de cerejeiras.</p>
+            <div class="pt-3 border-top d-flex justify-content-between align-items-center">
+              <span class="fs-5 fw-bold text-primary">R$ 6.300</span>
+              <a href="detalhes.html?id=kyoto" class="btn btn-outline-primary btn-sm">Ver Detalhes</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- BOTÃO VER MAIS -->
+    <div class="text-center mt-5">
+      <a href="destinos.html" class="btn btn-warning btn-lg px-5 fw-bold shadow">
+        Ver Mais Destinos <i class="bi bi-arrow-right me-1"></i>
+      </a>
+    </div>
+
+    <!-- DIFERENCIAIS DA AGÊNCIA -->
+    <div id="diferenciais" class="my-5 pt-5">
+      <div class="row text-center g-4">
+        <div class="col-12 col-md-4">
+          <div class="p-4 bg-white rounded shadow-sm">
+            <i class="bi bi-shield-check text-primary display-4"></i>
+            <h4 class="mt-3 fw-bold">Viagem Segura</h4>
+            <p class="text-muted mb-0">Seguro viagem incluso em todos os pacotes internacionais e suporte total.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="p-4 bg-white rounded shadow-sm">
+            <i class="bi bi-headset text-primary display-4"></i>
+            <h4 class="mt-3 fw-bold">Suporte 24/7</h4>
+            <p class="text-muted mb-0">Atendimento especializado em qualquer dia e horário durante sua viagem.</p>
+          </div>
+        </div>
+        <div class="col-12 col-md-4">
+          <div class="p-4 bg-white rounded shadow-sm">
+            <i class="bi bi-tags text-primary display-4"></i>
+            <h4 class="mt-3 fw-bold">Melhor Preço</h4>
+            <p class="text-muted mb-0">Garantia do menor preço do mercado e condições facilitadas de pagamento.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER PADRONIZADO -->
+  <footer class="bg-dark text-white pt-4 pb-3 mt-auto">
+    <div class="container">
+      <div class="row text-center text-md-start">
+        <div class="col-12 col-md-6 mb-3">
+          <h5 class="text-warning"><i class="bi bi-compass me-2"></i>ViajaMais Turismo</h5>
+          <p class="small text-secondary">Sua agência de viagens de confiança. Criamos experiências inesquecíveis pelos melhores destinos do mundo.</p>
+        </div>
+        <div class="col-12 col-md-6 text-md-end mb-3">
+          <p class="mb-1"><strong>Projeto:</strong> Site de Turismo Responsivo</p>
+          <p class="mb-1"><strong>Aluno:</strong> Desenvolvedor Web</p>
+          <p class="mb-0"><strong>Ano:</strong> 2026 | Desenvolvido com Bootstrap 5</p>
+        </div>
+      </div>
+      <hr class="border-secondary">
+      <div class="text-center small text-secondary">
+        &copy; 2026 ViajaMais Turismo — Todos os direitos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
