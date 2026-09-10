@@ -31,7 +31,7 @@ O site é composto por 3 páginas HTML interconectadas:
 ---
 
 ## 🔗 Link do Site Publicado no Vercel
-👉 [Acessar Projeto no Vercel](https://viajamais-turismo.vercel.app) site-bootstrap-lilac.vercel.app
+👉 [Acessar Projeto no Vercel](https://site-bootstrap-lilac.vercel.app)
 
 ---
 
