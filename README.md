@@ -3,8 +3,8 @@
 ## 📌 Nome do Projeto
 **ViajaMais Turismo** — Site Institucional e Catálogo de Pacotes de Viagem.
 
-## 👤 Nome do Aluno
-Cícero caetano e shopia varcalho
+## 👤 Nome dos Aluno
+Cícero Caetano e Sophia Carvalho
 
 ## 📝 Descrição do Projeto
 O **ViajaMais Turismo** é uma plataforma web responsiva voltada para a divulgação de destinos e pacotes turísticos nacionais e internacionais. O projeto foi desenvolvido com foco na usabilidade, navegação intuitiva e design moderno adaptável a diferentes dispositivos (smartphones, tablets e computadores).
